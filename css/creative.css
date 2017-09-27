@@ -502,9 +502,24 @@ video {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
-  background: url('https://s3.amazonaws.com/coverr-public/poster/Workaholic.jpg') no-repeat;
   background-size: cover;
   transition: 1s opacity;
+}
+
+.video-1 {
+  background: url('img/aerea1.jpg') no-repeat;
+}
+
+.video-2 {
+  background: url('img/aerea4.jpg') no-repeat;
+}
+
+.video-3 {
+  background: url('img/aerea3.jpg') no-repeat;
+}
+
+.video-4 {
+  background: url('img/aerea2.jpg') no-repeat;
 }
 
 .audio {
