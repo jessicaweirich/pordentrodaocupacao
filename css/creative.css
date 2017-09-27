@@ -531,7 +531,7 @@ video {
 }
 
 .panorama {
-  height: 400px;
+  height: 600px;
   overflow-x: scroll;
   overflow-y: hidden;
 }

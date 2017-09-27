@@ -45,6 +45,9 @@
         distance: '0px'
     }, 300);
 
+  $(function() {
+    $('.js-paver').paver();
+  });
 })(jQuery); // End of use strict
 
 function initMap() {
