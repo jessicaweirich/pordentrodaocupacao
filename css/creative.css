@@ -507,19 +507,19 @@ video {
 }
 
 .video-1 {
-  background: url('img/aerea1.jpg') no-repeat;
+  background: url('../img/aerea1.jpg') no-repeat;
 }
 
 .video-2 {
-  background: url('img/aerea4.jpg') no-repeat;
+  background: url('../img/aerea4.jpg') no-repeat;
 }
 
 .video-3 {
-  background: url('img/aerea3.jpg') no-repeat;
+  background: url('../img/aerea3.jpg') no-repeat;
 }
 
 .video-4 {
-  background: url('img/aerea2.jpg') no-repeat;
+  background: url('../img/aerea2.jpg') no-repeat;
 }
 
 .audio {
