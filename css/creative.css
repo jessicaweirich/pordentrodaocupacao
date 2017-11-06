@@ -221,11 +221,12 @@ aside {
   .navbar-default.affix .nav > li > a:focus:hover {
     color: #ACAC49;
   }
+}
 
 header {
   position: relative;
   width: 100%;
-  min-height: auto;
+  min-height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -233,13 +234,20 @@ header {
   background-position: center;
   text-align: center;
   color: white;
+  overflow: hidden;
 }
+
 header .header-content {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   text-align: center;
-  padding: 100px 15px 100px;
+  transform: translateY(-50%);
+  padding: 0 50px;
   width: 100%;
 }
+
 header .header-content .header-content-inner h1 {
   font-weight: 700;
   text-transform: uppercase;
@@ -247,48 +255,52 @@ header .header-content .header-content-inner h1 {
   margin-bottom: 0;
   font-size: 30px;
 }
+
 header .header-content .header-content-inner hr {
+  font-size: 50px;
   margin: 30px auto;
 }
+
 header .header-content .header-content-inner p {
+  font-size: 18px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
   margin-bottom: 50px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media (min-width: 768px) {
+
+@media (max-width: 768px) {
   header {
-    min-height: 100%;
-    overflow: hidden;
+    margin-top: 53px;
+    min-height: 225px;
   }
-  header .header-content {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 0 50px;
+
+  .antenor_arte {
+    margin-top: 53px;
   }
-  header .header-content .header-content-inner {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+
+  #homeHeading {
+    font-size: 22px;
+    margin-bottom: 10px;
   }
-  header .header-content .header-content-inner h1 {
+
+  #homeHeading2 {
     font-size: 50px;
   }
-  header .header-content .header-content-inner p {
-    font-size: 18px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+
+  #homeHeading3 {
+    font-size: 22px;
+    margin-bottom: 10px;
   }
 }
+
 .section-heading {
   margin-top: 0;
   padding: 40px 0 20px 0;
 }
-	
+
 .service-box {
   max-width: 400px;
   margin: 50px 20px;
