@@ -170,6 +170,17 @@ aside {
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
+
+.panorama {
+  height: 420px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.panorama img {
+  height: 100%;
+}
+
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
@@ -528,16 +539,6 @@ video {
 
 .stopfade {
    opacity: .5;
-}
-
-.panorama {
-  height: 600px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-
-.panorama img {
-  height: 100%;
 }
 
 .map {

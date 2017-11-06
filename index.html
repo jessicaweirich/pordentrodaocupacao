@@ -159,13 +159,9 @@
 	</section>
 
     <section id="portfolio">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="js-paver panorama">
-                <img src="img/panoramica.jpeg" class="img-responsive" />
-            </div>
-          </div>
-        </div>
+      <div class="js-paver panorama">
+        <img src="img/panoramica.jpeg">
+      </div>
     </section>
 
     <section class="services">
@@ -222,8 +218,7 @@
     <script src="js/jquery.ba-throttle-debounce.js"></script>
     <script src="js/jquery.paver.js"></script>
     <script src="js/creative.js"></script>
-    <script>$(function() { $('.js-paver').paver(); });</script>
-
+    <script>$(function() { $('.js-paver').paver({ minimumOverflow: 50 }); });</script>
 </body>
 
 </html>
