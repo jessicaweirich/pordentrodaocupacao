@@ -9,14 +9,17 @@
       $lazy.removeAttr('data-src');
       $('.carousel-caption').show();
     });
+
+    $('video').each(function () { enableInlineVideo(this); });
   });
 
   // jQuery for page scrolling feature - requires jQuery Easing plugin
   $(document).on('click', 'a.page-scroll', function(event) {
     var $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: ($($anchor.attr('href')).offset().top - 50)
-    }, 1250, 'easeInOutExpo');
+    var offset = $($anchor.attr('href')).offset();
+    if (!offset) { return; }
+
+    $('html, body').stop().animate({ scrollTop: (offset.top - 50) }, 1250, 'easeInOutExpo');
     event.preventDefault();
   });
 
